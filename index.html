@@ -4,6 +4,31 @@
 <title>Мой блог</title>
         <link type="text/css" rel="stylesheet" href="style.css" />
 </head>
+
+<script>
+  // Создаём снежинки
+  const snowflakesCount = 50; // количество снежинок
+  const container = document.body;
+
+  for (let i = 0; i < snowflakesCount; i++) {
+    const snowflake = document.createElement('div');
+    snowflake.innerHTML = '❄';
+    snowflake.classList.add('snowflake');
+
+    // Случайные параметры
+    const size = Math.random() * 1.5 + 0.5; // от 0.5 до 2em
+    const left = Math.random() * 100; // позиция по горизонтали
+    const duration = Math.random() * 10 + 5; // длительность падения от 5 до 15 сек
+    const delay = Math.random() * 5; // задержка старта
+
+    snowflake.style.left = `${left}vw`;
+    snowflake.style.fontSize = `${size}em`;
+    snowflake.style.animationDuration = `${duration}s`;
+    snowflake.style.animationDelay = `${delay}s`;
+
+    container.appendChild(snowflake);
+  }
+</script>
     
 <body>
  <h2> 17 января, 2026</h2> 
