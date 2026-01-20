@@ -1,31 +1,14 @@
+body{
+ background-color: #d2b48c;
+ margin-left: 20%;
+ margin-right: 20%;
+ border: 2px dotted black;
+ padding: 10px 10px 10px 10px;
+ font-family: sans-serif;
+   }
 
-<style>
-  /* Красный новогодний фон */
-  body {
-    background: linear-gradient(135deg, #8B0000, #A52A2A, #CD5C5C); /* тёмно-красный → коричневато-красный → индийский красный */
-    color: white;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-    position: relative;
-    overflow-x: hidden;
-  }
-
-  /* Стили для снежинок */
-  .snowflake {
-    position: absolute;
-    top: -20px;
-    color: #fff;
-    font-size: 1.5em;
-    user-select: none;
-    z-index: -1;
-    opacity: 0.9;
-    animation: fall linear infinite;
-  }
-
-  @keyframes fall {
-    to {
-      transform: translateY(105vh) rotate(360deg);
-    }
-  }
-</style>
+ blockquote.q {
+color: #D4AF37;
+border-left: 4px solid #8B0000;
+font-style: italic;
+}
