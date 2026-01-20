@@ -106,19 +106,22 @@
                 container.appendChild(snowflake);
             }
         });
-    </script>
-     @font-face {
-  font-family: 'Pudelinka'; /* Дайте шрифту имя, которое будете использовать */
-  src: url('../fonts/pudelinka(1).ttf') format('truetype'); /* Укажите путь к файлу шрифта */
-  font-weight: normal; /* Определите нормальную толщину шрифта */
-  font-style: normal; /* Определите нормальный стиль шрифта (обычный, курсив) */
-}
-
-body { /* Или другой селектор, который соответствует всему тексту блога */
-  font-family: 'Pudelinka', sans-serif; /* Примените шрифт Pudelinka (sans-serif как запасной вариант) */
-}
+    
 
       
+<style>
+    @font-face {
+      font-family: 'Pudelinka';
+      src: url('fonts/pudelinka.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    /* Применяем шрифт ко ВСЕМУ тексту на странице */
+    * {
+      font-family: 'Pudelinka', cursive, sans-serif !important;
+    }
+  </style>
 
 
 </head>
